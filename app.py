@@ -8,15 +8,15 @@ import os
 app = Flask(__name__)
 
 color_codes = {
-    "red": "#e74c3c",
-    "green": "#16a085",
-    "blue": "#2980b9",
-    "blue2": "#30336b",
-    "pink": "#be2edd",
+    "red": "#CD5C5C",
+    "green": "#27AE60",
+    "blue": "#85C1E9",
+    "blue2": "#1F618D",
+    "grey": "#85929E",
     "darkblue": "#130f40"
 }
 
-color = os.environ.get('APP_COLOR') or random.choice(["red","green","blue","blue2","darkblue","pink"])
+color = os.environ.get('APP_COLOR') or random.choice(["grey","blue","green","red","darkblue","blue2"])
 
 @app.route("/")
 def main():
